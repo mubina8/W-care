@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class RegistrationPage extends AppCompatActivity implements View.OnClickListener {
+public class RegistrationPage extends AppCompatActivity {
 
     TextView loPage;
 
@@ -18,14 +18,15 @@ public class RegistrationPage extends AppCompatActivity implements View.OnClickL
         setContentView( R.layout.activity_registration_page );
 
         loPage = (TextView) findViewById( R.id.backtologinpage );
-        loPage.setOnClickListener( this );
-    }
+        loPage.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent( RegistrationPage.this,SignIn.class );
-        startActivity( intent );
+                Intent intent = new Intent( RegistrationPage.this,SignIn.class );
+                startActivity( intent );
 
-        Toast.makeText(RegistrationPage.this,"Login Successful",Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegistrationPage.this,"Login Successful",Toast.LENGTH_SHORT).show();
+            }
+        } );
     }
 }
