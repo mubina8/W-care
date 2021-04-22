@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        Intent intent = new Intent( MainActivity.this,dashboard.class );
+        Intent intent = new Intent( MainActivity.this,hygiene.class );
         startActivity( intent );
 
         Toast.makeText(MainActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".hygiene">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginRight="300dp"
+                    android:src="@drawable/back"
+                    android:layout_centerVertical="true"
+
+
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:src="@drawable/search"
+                    android:layout_marginLeft="300dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hygiene"
+                android:textSize="36sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:textColor="@color/purple"
+
+                />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_bk3"
+                    android:layout_margin="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="20sp"
+                        android:text="Vaginal Health"
+                        android:textColor="@color/lemon"
+                        android:paddingTop="60dp"
+                        android:paddingLeft="20dp"
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/vaginalHealthId"
+                        android:background="@android:color/transparent"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/va"
+
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/pink"
+                    android:layout_margin="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+
+                        android:src="@drawable/sa"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="20sp"
+                        android:text="Sanitary Napkin"
+                        android:textColor="@color/purple"
+                        android:paddingTop="60dp"
+                        android:paddingRight="20dp"
+                        android:layout_alignParentRight="true"
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sanitaryNapkinId"
+                        android:background="@android:color/transparent"
+                        />
+
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/lemon"
+                android:layout_margin="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="20sp"
+                    android:text="Cloths"
+                    android:textColor="@color/white"
+                    android:paddingTop="60dp"
+                    android:paddingLeft="20dp"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/clothsId"
+                    android:background="@android:color/transparent"
+                    />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/cloth"
+                    android:background="@android:color/transparent"
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/purple"
+                android:layout_margin="20dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+
+                    android:src="@drawable/in"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="20sp"
+                    android:text="Safe Intercourse"
+                    android:textColor="@color/lemon"
+                    android:paddingTop="60dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/safeIntercourseId"
+                    android:background="@android:color/transparent"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/medication"
+                android:layout_margin="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="20sp"
+                    android:text="Self Medication"
+                    android:textColor="@color/white"
+                    android:paddingTop="60dp"
+                    android:paddingLeft="20dp"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/medicationId"
+                    android:background="@android:color/transparent"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/pill"
+                    android:background="@android:color/transparent"
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+           
+
+
+        </LinearLayout>
+
+
+
+
+
+</ScrollView>
