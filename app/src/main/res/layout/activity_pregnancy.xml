@@ -85,8 +85,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Before"
-                                    android:textSize="20sp"
+                                    android:text="Before Birth"
+                                    android:textSize="16sp"
                                     android:layout_below="@+id/healthCareImage"
                                     android:layout_centerHorizontal="true"
                                     android:fontFamily="@font/montserrat_bold"
@@ -97,7 +97,7 @@
                                 <Button
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/healthCareId"
+                                    android:id="@+id/beforeId"
                                     android:background="@android:color/transparent"
                                     />
 
@@ -127,9 +127,9 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="After"
+                                    android:text="After Birth"
                                     android:fontFamily="@font/montserrat_bold"
-                                    android:textSize="20sp"
+                                    android:textSize="16sp"
                                     android:layout_below="@+id/DietChartImage"
                                     android:layout_centerHorizontal="true"
 
@@ -140,7 +140,7 @@
                                 <Button
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/dietChartId"
+                                    android:id="@+id/AfterId"
                                     android:background="@android:color/transparent"
                                     />
 
@@ -179,7 +179,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Special-tips"
-                                    android:textSize="20sp"
+                                    android:textSize="16sp"
                                     android:layout_below="@+id/medicineReminderImage"
                                     android:layout_centerHorizontal="true"
                                     android:fontFamily="@font/montserrat_bold"
@@ -190,7 +190,7 @@
                                 <Button
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/medicineReminderId"
+                                    android:id="@+id/specialTipsId"
                                     android:background="@android:color/transparent"
                                     />
 
@@ -221,7 +221,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Mental-Health"
-                                    android:textSize="20sp"
+                                    android:textSize="16sp"
                                     android:layout_below="@+id/InformationImage"
                                     android:layout_centerHorizontal="true"
                                     android:fontFamily="@font/montserrat_bold"
@@ -232,7 +232,7 @@
                                 <Button
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/InformationId"
+                                    android:id="@+id/mentalHeailthId"
                                     android:background="@android:color/transparent"
                                     />
 

@@ -67,7 +67,7 @@
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/healthCareId"
+                        android:id="@+id/hygieneId"
                         android:background="@android:color/transparent"
                         />
 
@@ -110,7 +110,7 @@
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/dietChartId"
+                        android:id="@+id/pregnancyId"
                         android:background="@android:color/transparent"
                         />
 
