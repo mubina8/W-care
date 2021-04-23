@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".mentalHealthActivity"></activity>
+        <activity android:name=".pregnancy"/>
         <activity android:name=".beforeActivity" />
         <activity android:name=".AfterActivity" />
         <activity android:name=".hygiene" />

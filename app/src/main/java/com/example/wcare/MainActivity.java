@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 // if user don't logout then user will sent to dashbord every time user opens the app
                 if(mAuth.getCurrentUser()!=null)
                 {
-                    Intent intent= new Intent(MainActivity.this,pregnancy.class);
+                    Intent intent= new Intent(MainActivity.this,NavigationPage.class);
                     startActivity(intent);
                     finish();
 
