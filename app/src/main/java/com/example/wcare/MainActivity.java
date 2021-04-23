@@ -15,13 +15,14 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
 
     FirebaseAuth mAuth;
     private static int SPLASH_SCREEN = 3000;
     Animation topanim;
     ImageView logoimg;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // if user don't logout then user will sent to dashbord every time user opens the app
                 if(mAuth.getCurrentUser()!=null)
                 {
-                    Intent intent= new Intent(MainActivity.this,NavigationPage.class);
+                    Intent intent= new Intent(MainActivity.this,pregnancy.class);
                     startActivity(intent);
                     finish();
 
@@ -58,14 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         },SPLASH_SCREEN);
 
 
+
     }
 
-    @Override
-    public void onClick(View v) {
-
-        Intent intent = new Intent( MainActivity.this,mentalHealthActivity.class );
-        startActivity( intent );
-
-        Toast.makeText(MainActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
-    }
 }

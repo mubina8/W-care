@@ -1,0 +1,608 @@
+Index: app/src/main/res/layout/activity_pregnancy.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/bgpic\"\r\n    tools:context=\".pregnancy\">\r\n\r\n    <ScrollView\r\n        android:layout_width=\"fill_parent\"\r\n        android:layout_height=\"fill_parent\"\r\n        android:layout_alignParentTop=\"true\"\r\n        android:layout_alignParentLeft=\"true\"\r\n        >\r\n        <LinearLayout\r\n            android:layout_width=\"fill_parent\"\r\n            android:layout_height=\"fill_parent\"\r\n            android:orientation=\"vertical\"\r\n            >\r\n            <RelativeLayout\r\n                android:layout_width=\"fill_parent\"\r\n                android:layout_height=\"fill_parent\">\r\n                <LinearLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"230dp\"\r\n                    android:orientation=\"vertical\"\r\n                    android:gravity=\"center\"\r\n\r\n                    >\r\n\r\n                    <TextView\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:layout_gravity=\"center\"\r\n                        android:text=\"Pregnancy\"\r\n                        android:textColor=\"@color/lemon\"\r\n                        android:textAppearance=\"@style/TextAppearance.AppCompat.Large\"\r\n                        android:paddingTop=\"40dp\"\r\n                        android:layout_marginLeft=\"70dp\"\r\n                        android:layout_marginTop=\"10dp\"\r\n                        android:textSize=\"40dp\"\r\n                        android:fontFamily=\"@font/montserrat_bold\"\r\n\r\n                        />\r\n\r\n\r\n                </LinearLayout>\r\n\r\n                <LinearLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:orientation=\"vertical\"\r\n                    android:layout_marginTop=\"255dp\"\r\n                    android:layout_marginLeft=\"10dp\"\r\n                    android:layout_marginRight=\"10dp\"\r\n                    >\r\n                    <LinearLayout\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"135dp\"\r\n                        android:orientation=\"horizontal\"\r\n                        android:layout_marginBottom=\"10dp\"\r\n                        >\r\n                        <androidx.cardview.widget.CardView\r\n                            android:layout_width=\"0dp\"\r\n                            android:layout_height=\"match_parent\"\r\n                            android:layout_weight=\"1\"\r\n                            android:orientation = \"vertical\"\r\n\r\n                            android:layout_marginRight=\"5dp\"\r\n                            android:gravity = \"center\"\r\n                            >\r\n                            <RelativeLayout\r\n                                android:layout_width=\"match_parent\"\r\n                                android:layout_height=\"match_parent\"\r\n                                android:background=\"@color/pink\"\r\n                                >\r\n                                <ImageView\r\n                                    android:layout_width=\"70dp\"\r\n                                    android:layout_height=\"50dp\"\r\n                                    android:id=\"@+id/healthCareImage\"\r\n                                    android:src=\"@drawable/preg3\"\r\n                                    android:layout_centerInParent=\"true\"\r\n                                    />\r\n                                <TextView\r\n                                    android:layout_width=\"wrap_content\"\r\n                                    android:layout_height=\"wrap_content\"\r\n                                    android:text=\"Before\"\r\n                                    android:textSize=\"20sp\"\r\n                                    android:layout_below=\"@+id/healthCareImage\"\r\n                                    android:layout_centerHorizontal=\"true\"\r\n                                    android:fontFamily=\"@font/montserrat_bold\"\r\n                                    android:textColor=\"#BE79DF\"\r\n                                    android:layout_marginTop=\"10dp\"\r\n                                    android:layout_marginBottom=\"10dp\"\r\n                                    />\r\n                                <Button\r\n                                    android:layout_width=\"match_parent\"\r\n                                    android:layout_height=\"match_parent\"\r\n                                    android:id=\"@+id/healthCareId\"\r\n                                    android:background=\"@android:color/transparent\"\r\n                                    />\r\n\r\n                            </RelativeLayout>\r\n\r\n                        </androidx.cardview.widget.CardView>\r\n                        <androidx.cardview.widget.CardView\r\n                            android:layout_width=\"0dp\"\r\n                            android:layout_height=\"match_parent\"\r\n                            android:layout_weight=\"1\"\r\n                            android:layout_marginLeft=\"5dp\"\r\n                            android:orientation = \"vertical\"\r\n                            android:gravity = \"center\"\r\n                            >\r\n                            <RelativeLayout\r\n                                android:layout_width=\"match_parent\"\r\n                                android:layout_height=\"match_parent\"\r\n                                android:background=\"@color/pink\"\r\n                                >\r\n                                <ImageView\r\n                                    android:layout_width=\"70dp\"\r\n                                    android:layout_height=\"50dp\"\r\n                                    android:id=\"@+id/DietChartImage\"\r\n                                    android:src=\"@drawable/preg4\"\r\n                                    android:layout_centerInParent=\"true\"\r\n                                    />\r\n                                <TextView\r\n                                    android:layout_width=\"wrap_content\"\r\n                                    android:layout_height=\"wrap_content\"\r\n                                    android:text=\"After\"\r\n                                    android:fontFamily=\"@font/montserrat_bold\"\r\n                                    android:textSize=\"20sp\"\r\n                                    android:layout_below=\"@+id/DietChartImage\"\r\n                                    android:layout_centerHorizontal=\"true\"\r\n\r\n                                    android:textColor=\"#BE79DF\"\r\n                                    android:layout_marginTop=\"10dp\"\r\n                                    android:layout_marginBottom=\"10dp\"\r\n                                    />\r\n                                <Button\r\n                                    android:layout_width=\"match_parent\"\r\n                                    android:layout_height=\"match_parent\"\r\n                                    android:id=\"@+id/dietChartId\"\r\n                                    android:background=\"@android:color/transparent\"\r\n                                    />\r\n\r\n                            </RelativeLayout>\r\n\r\n                        </androidx.cardview.widget.CardView>\r\n\r\n                    </LinearLayout>\r\n                    <LinearLayout\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"135dp\"\r\n                        android:orientation=\"horizontal\"\r\n                        android:layout_marginBottom=\"10dp\"\r\n                        >\r\n                        <androidx.cardview.widget.CardView\r\n                            android:layout_width=\"0dp\"\r\n                            android:layout_height=\"match_parent\"\r\n                            android:layout_weight=\"1\"\r\n                            android:orientation = \"vertical\"\r\n                            android:layout_marginRight=\"5dp\"\r\n                            android:gravity = \"center\"\r\n                            >\r\n                            <RelativeLayout\r\n                                android:layout_width=\"match_parent\"\r\n                                android:layout_height=\"match_parent\"\r\n                                android:background=\"@color/pink\"\r\n                                >\r\n                                <ImageView\r\n                                    android:layout_width=\"70dp\"\r\n                                    android:layout_height=\"50dp\"\r\n                                    android:id=\"@+id/medicineReminderImage\"\r\n                                    android:src=\"@drawable/preg5\"\r\n                                    android:layout_centerInParent=\"true\"\r\n                                    />\r\n                                <TextView\r\n                                    android:layout_width=\"wrap_content\"\r\n                                    android:layout_height=\"wrap_content\"\r\n                                    android:text=\"Special-tips\"\r\n                                    android:textSize=\"20sp\"\r\n                                    android:layout_below=\"@+id/medicineReminderImage\"\r\n                                    android:layout_centerHorizontal=\"true\"\r\n                                    android:fontFamily=\"@font/montserrat_bold\"\r\n                                    android:textColor=\"#BE79DF\"\r\n                                    android:layout_marginTop=\"10dp\"\r\n                                    android:layout_marginBottom=\"10dp\"\r\n                                    />\r\n                                <Button\r\n                                    android:layout_width=\"match_parent\"\r\n                                    android:layout_height=\"match_parent\"\r\n                                    android:id=\"@+id/medicineReminderId\"\r\n                                    android:background=\"@android:color/transparent\"\r\n                                    />\r\n\r\n                            </RelativeLayout>\r\n\r\n                        </androidx.cardview.widget.CardView>\r\n                        <androidx.cardview.widget.CardView\r\n                            android:layout_width=\"0dp\"\r\n                            android:layout_height=\"match_parent\"\r\n                            android:layout_weight=\"1\"\r\n                            android:layout_marginLeft=\"5dp\"\r\n                            android:orientation = \"vertical\"\r\n                            android:gravity = \"center\"\r\n                            >\r\n                            <RelativeLayout\r\n                                android:layout_width=\"match_parent\"\r\n                                android:layout_height=\"match_parent\"\r\n                                android:background=\"@color/pink\"\r\n                                >\r\n                                <ImageView\r\n                                    android:layout_width=\"70dp\"\r\n                                    android:layout_height=\"50dp\"\r\n                                    android:id=\"@+id/InformationImage\"\r\n                                    android:src=\"@drawable/preg6\"\r\n                                    android:layout_centerInParent=\"true\"\r\n                                    />\r\n                                <TextView\r\n                                    android:layout_width=\"wrap_content\"\r\n                                    android:layout_height=\"wrap_content\"\r\n                                    android:text=\"Mental-Health\"\r\n                                    android:textSize=\"20sp\"\r\n                                    android:layout_below=\"@+id/InformationImage\"\r\n                                    android:layout_centerHorizontal=\"true\"\r\n                                    android:fontFamily=\"@font/montserrat_bold\"\r\n                                    android:textColor=\"#BE79DF\"\r\n                                    android:layout_marginTop=\"10dp\"\r\n                                    android:layout_marginBottom=\"10dp\"\r\n                                    />\r\n                                <Button\r\n                                    android:layout_width=\"match_parent\"\r\n                                    android:layout_height=\"match_parent\"\r\n                                    android:id=\"@+id/InformationId\"\r\n                                    android:background=\"@android:color/transparent\"\r\n                                    />\r\n\r\n                            </RelativeLayout>\r\n\r\n                        </androidx.cardview.widget.CardView>\r\n\r\n                    </LinearLayout>\r\n\r\n                </LinearLayout>\r\n\r\n\r\n\r\n            </RelativeLayout>\r\n\r\n\r\n\r\n        </LinearLayout>\r\n\r\n\r\n\r\n\r\n    </ScrollView>\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_pregnancy.xml	(revision 3d262067af547a90e8fcddd898c0148decfe4b0b)
++++ app/src/main/res/layout/activity_pregnancy.xml	(date 1619126395841)
+@@ -85,8 +85,8 @@
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+-                                    android:text="Before"
+-                                    android:textSize="20sp"
++                                    android:text="Before Birth"
++                                    android:textSize="16sp"
+                                     android:layout_below="@+id/healthCareImage"
+                                     android:layout_centerHorizontal="true"
+                                     android:fontFamily="@font/montserrat_bold"
+@@ -97,7 +97,7 @@
+                                 <Button
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+-                                    android:id="@+id/healthCareId"
++                                    android:id="@+id/beforeId"
+                                     android:background="@android:color/transparent"
+                                     />
+ 
+@@ -127,9 +127,9 @@
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+-                                    android:text="After"
++                                    android:text="After Birth"
+                                     android:fontFamily="@font/montserrat_bold"
+-                                    android:textSize="20sp"
++                                    android:textSize="16sp"
+                                     android:layout_below="@+id/DietChartImage"
+                                     android:layout_centerHorizontal="true"
+ 
+@@ -140,7 +140,7 @@
+                                 <Button
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+-                                    android:id="@+id/dietChartId"
++                                    android:id="@+id/AfterId"
+                                     android:background="@android:color/transparent"
+                                     />
+ 
+@@ -179,7 +179,7 @@
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Special-tips"
+-                                    android:textSize="20sp"
++                                    android:textSize="16sp"
+                                     android:layout_below="@+id/medicineReminderImage"
+                                     android:layout_centerHorizontal="true"
+                                     android:fontFamily="@font/montserrat_bold"
+@@ -190,7 +190,7 @@
+                                 <Button
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+-                                    android:id="@+id/medicineReminderId"
++                                    android:id="@+id/specialTipsId"
+                                     android:background="@android:color/transparent"
+                                     />
+ 
+@@ -221,7 +221,7 @@
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Mental-Health"
+-                                    android:textSize="20sp"
++                                    android:textSize="16sp"
+                                     android:layout_below="@+id/InformationImage"
+                                     android:layout_centerHorizontal="true"
+                                     android:fontFamily="@font/montserrat_bold"
+@@ -232,7 +232,7 @@
+                                 <Button
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+-                                    android:id="@+id/InformationId"
++                                    android:id="@+id/mentalHeailthId"
+                                     android:background="@android:color/transparent"
+                                     />
+ 
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.wcare\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/AppTheme\">\r\n        <activity android:name=\".hygiene\"></activity>\r\n        <activity android:name=\".fragments.CommunityFragment\" />\r\n        <activity android:name=\".NavigationPage\" />\r\n        <activity android:name=\".SignIn\" />\r\n        <activity android:name=\".RegistrationPage\" />\r\n        <activity android:name=\".MainActivity\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n\r\n        <meta-data\r\n            android:name=\"preloaded_fonts\"\r\n            android:resource=\"@array/preloaded_fonts\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision 3d262067af547a90e8fcddd898c0148decfe4b0b)
++++ app/src/main/AndroidManifest.xml	(date 1619123637054)
+@@ -9,7 +9,10 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
+-        <activity android:name=".hygiene"></activity>
++        <activity android:name=".mentalHealthActivity"></activity>
++        <activity android:name=".beforeActivity" />
++        <activity android:name=".AfterActivity" />
++        <activity android:name=".hygiene" />
+         <activity android:name=".fragments.CommunityFragment" />
+         <activity android:name=".NavigationPage" />
+         <activity android:name=".SignIn" />
+Index: app/src/main/java/com/example/wcare/pregnancy.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.wcare;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.os.Bundle;\r\n\r\npublic class pregnancy extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_pregnancy);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/wcare/pregnancy.java	(revision 3d262067af547a90e8fcddd898c0148decfe4b0b)
++++ app/src/main/java/com/example/wcare/pregnancy.java	(date 1619126895590)
+@@ -2,13 +2,43 @@
+ 
+ import androidx.appcompat.app.AppCompatActivity;
+ 
++import android.content.Intent;
+ import android.os.Bundle;
++import android.view.View;
++import android.widget.Button;
+ 
+-public class pregnancy extends AppCompatActivity {
+-
++public class pregnancy extends AppCompatActivity implements View.OnClickListener {
++    Button after,before,special,mental;
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_pregnancy);
++        this.setTitle("Pregnancy");
++        after = (Button)findViewById(R.id.AfterId);
++        before = (Button)findViewById(R.id.beforeId);
++        special = (Button)findViewById(R.id.specialTipsId);
++        mental = (Button)findViewById(R.id.mentalHeailthId);
+     }
++
++    @Override
++    public void onClick(View v) {
++        if(v.getId()==R.id.AfterId){
++            Intent intent = new Intent(getApplicationContext(), AfterActivity.class);
++            startActivity(intent);
++        }
++        if(v.getId()==R.id.beforeId){
++            Intent intent = new Intent(getApplicationContext(), beforeActivity.class);
++            startActivity(intent);
++        }
++        if(v.getId()==R.id.specialTipsId){
++            Intent intent = new Intent(getApplicationContext(), AfterActivity.class);
++            startActivity(intent);
++        }
++        if(v.getId()==R.id.mentalHeailthId){
++            Intent intent = new Intent(getApplicationContext(), mentalHealthActivity.class);
++            startActivity(intent);
++        }
++    }
++
++
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/example/wcare/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.wcare;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.Toast;\r\n\r\npublic class MainActivity extends AppCompatActivity implements View.OnClickListener {\r\n\r\n    Button trial;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate( savedInstanceState );\r\n        setContentView( R.layout.activity_main );\r\n\r\n        trial = (Button) findViewById( R.id.trial );\r\n        trial.setOnClickListener( this );\r\n    }\r\n\r\n    @Override\r\n    public void onClick(View v) {\r\n\r\n        Intent intent = new Intent( MainActivity.this,hygiene.class );\r\n        startActivity( intent );\r\n\r\n        Toast.makeText(MainActivity.this,\"Login Successful\",Toast.LENGTH_SHORT).show();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/wcare/MainActivity.java	(revision 3d262067af547a90e8fcddd898c0148decfe4b0b)
++++ app/src/main/java/com/example/wcare/MainActivity.java	(date 1619124370414)
+@@ -24,7 +24,7 @@
+     @Override
+     public void onClick(View v) {
+ 
+-        Intent intent = new Intent( MainActivity.this,hygiene.class );
++        Intent intent = new Intent( MainActivity.this,mentalHealthActivity.class );
+         startActivity( intent );
+ 
+         Toast.makeText(MainActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
+Index: app/src/main/res/layout/activity_after.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_after.xml	(date 1619122831076)
++++ app/src/main/res/layout/activity_after.xml	(date 1619122831076)
+@@ -0,0 +1,121 @@
++<?xml version="1.0" encoding="utf-8"?>
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/lemon"
++    tools:context=".AfterActivity">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_margin="10dp"
++        android:orientation="vertical"
++        android:gravity="center"
++        >
++    <RelativeLayout
++        android:layout_width="match_parent"
++        android:layout_height="?actionBarSize">
++        <ImageView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="15dp"
++            android:layout_marginRight="300dp"
++            android:src="@drawable/back"
++            android:layout_centerVertical="true"
++
++
++            />
++
++    </RelativeLayout>
++
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="150dp"
++            android:background="@drawable/food3"
++            android:layout_margin="20dp"
++            android:gravity="center"
++            >
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat_bold"
++            android:textSize="20sp"
++            android:text="FOOD"
++            android:textColor="@color/lemon"
++
++            />
++        </RelativeLayout>
++        <TextView
++            android:id="@+id/foodTextViewId"
++            android:layout_marginRight="20dp"
++            android:layout_marginLeft="20dp"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat"
++            android:textSize="20sp"
++            android:justificationMode="inter_word"
++            />
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="150dp"
++            android:background="@drawable/medicine"
++            android:layout_margin="20dp"
++            android:gravity="center"
++            >
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:fontFamily="@font/montserrat_bold"
++                android:textSize="20sp"
++                android:text="MEDICINE"
++                android:textColor="@color/pink"
++
++                />
++        </RelativeLayout>
++        <TextView
++            android:id="@+id/medicineTextViewId"
++            android:layout_marginRight="20dp"
++            android:layout_marginLeft="20dp"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat"
++            android:textSize="20sp"
++            android:justificationMode="inter_word"
++            />
++
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="150dp"
++            android:background="@drawable/lifestyle"
++            android:layout_margin="20dp"
++            android:gravity="center"
++            >
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:fontFamily="@font/montserrat_bold"
++                android:textSize="20sp"
++                android:text="LIFESTYLE"
++                android:textColor="@color/purple"
++
++                />
++        </RelativeLayout>
++        <TextView
++            android:id="@+id/lifestyleTextViewId"
++            android:layout_marginRight="20dp"
++            android:layout_marginLeft="20dp"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat"
++            android:textSize="20sp"
++            android:justificationMode="inter_word"
++            />
++
++
++    </LinearLayout>
++
++
++
++</ScrollView>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_before.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_before.xml	(date 1619123071387)
++++ app/src/main/res/layout/activity_before.xml	(date 1619123071387)
+@@ -0,0 +1,121 @@
++<?xml version="1.0" encoding="utf-8"?>
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".beforeActivity">
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_margin="10dp"
++        android:orientation="vertical"
++        android:gravity="center"
++        >
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="?actionBarSize">
++            <ImageView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="15dp"
++                android:layout_marginRight="300dp"
++                android:src="@drawable/back"
++                android:layout_centerVertical="true"
++
++
++                />
++
++
++
++        </RelativeLayout>
++
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="150dp"
++            android:background="@drawable/food2"
++            android:layout_margin="20dp"
++            android:gravity="center"
++            >
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:fontFamily="@font/montserrat_bold"
++                android:textSize="20sp"
++                android:text="FOOD"
++                android:textColor="@color/lemon"
++
++                />
++        </RelativeLayout>
++        <TextView
++            android:id="@+id/foodTextViewId"
++            android:layout_marginRight="20dp"
++            android:layout_marginLeft="20dp"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat"
++            android:textSize="20sp"
++            android:justificationMode="inter_word"
++            />
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="150dp"
++            android:background="@drawable/medicine2"
++            android:layout_margin="20dp"
++            android:gravity="center"
++            >
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:fontFamily="@font/montserrat_bold"
++                android:textSize="20sp"
++                android:text="MEDICINE"
++                android:textColor="@color/white"
++
++                />
++        </RelativeLayout>
++        <TextView
++            android:id="@+id/medicineTextViewId"
++            android:layout_marginRight="20dp"
++            android:layout_marginLeft="20dp"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat"
++            android:textSize="20sp"
++            android:justificationMode="inter_word"
++            />
++
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="150dp"
++            android:background="@drawable/lifestyle2"
++            android:layout_margin="20dp"
++            android:gravity="center"
++            >
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:fontFamily="@font/montserrat_bold"
++                android:textSize="20sp"
++                android:text="LIFESTYLE"
++                android:textColor="@color/lemon"
++
++                />
++        </RelativeLayout>
++        <TextView
++            android:id="@+id/lifestyleTextViewId"
++            android:layout_marginRight="20dp"
++            android:layout_marginLeft="20dp"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat"
++            android:textSize="20sp"
++            android:justificationMode="inter_word"
++            />
++
++
++    </LinearLayout>
++
++</ScrollView>
+\ No newline at end of file
+Index: app/src/main/java/com/example/wcare/AfterActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/wcare/AfterActivity.java	(date 1619119403937)
++++ app/src/main/java/com/example/wcare/AfterActivity.java	(date 1619119403937)
+@@ -0,0 +1,14 @@
++package com.example.wcare;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class AfterActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_after);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/wcare/beforeActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/wcare/beforeActivity.java	(date 1619122359405)
++++ app/src/main/java/com/example/wcare/beforeActivity.java	(date 1619122359405)
+@@ -0,0 +1,14 @@
++package com.example.wcare;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class beforeActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_before);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_mental_health.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_mental_health.xml	(date 1619123812523)
++++ app/src/main/res/layout/activity_mental_health.xml	(date 1619123812523)
+@@ -0,0 +1,62 @@
++<?xml version="1.0" encoding="utf-8"?>
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/lemon"
++    tools:context=".mentalHealthActivity">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_margin="10dp"
++        android:orientation="vertical"
++        android:gravity="center"
++        >
++    <RelativeLayout
++        android:layout_width="match_parent"
++        android:layout_height="?actionBarSize">
++        <ImageView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="15dp"
++            android:layout_marginRight="300dp"
++            android:src="@drawable/back"
++            android:layout_centerVertical="true"
++
++
++            />
++
++    </RelativeLayout>
++
++    <RelativeLayout
++        android:layout_width="match_parent"
++        android:layout_height="150dp"
++        android:background="@drawable/mentalhealth"
++        android:layout_margin="20dp"
++        android:gravity="center"
++        >
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/montserrat_bold"
++            android:textSize="20sp"
++            android:text="FOOD"
++            android:textColor="@color/lemon"
++
++            />
++    </RelativeLayout>
++    <TextView
++        android:id="@+id/mentalTextViewId"
++        android:layout_marginRight="20dp"
++        android:layout_marginLeft="20dp"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:fontFamily="@font/montserrat"
++        android:textSize="20sp"
++        android:justificationMode="inter_word"
++        />
++    </LinearLayout>
++
++</ScrollView>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_care.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@color/lemon\"\r\n    tools:context=\".fragments.CareFragment\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"240dp\"\r\n        android:orientation=\"vertical\"\r\n        android:gravity=\"center\">\r\n\r\n        <ImageView\r\n            android:layout_width=\"100dp\"\r\n            android:layout_height=\"100dp\"\r\n            android:src=\"@drawable/pregnancy\" />\r\n    </LinearLayout>\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\"\r\n        android:layout_marginTop=\"320dp\"\r\n        android:layout_marginLeft=\"10dp\"\r\n        android:layout_marginRight=\"10dp\"\r\n        >\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"140dp\"\r\n            android:orientation=\"horizontal\"\r\n            android:layout_marginBottom=\"10dp\"\r\n            >\r\n            <androidx.cardview.widget.CardView\r\n                android:layout_width=\"0dp\"\r\n                android:layout_height=\"match_parent\"\r\n                android:layout_weight=\"1\"\r\n                android:orientation = \"vertical\"\r\n\r\n                android:layout_marginRight=\"5dp\"\r\n                android:gravity = \"center\"\r\n                >\r\n                <RelativeLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"match_parent\"\r\n                    android:background=\"@color/pink\"\r\n                    >\r\n                    <ImageView\r\n                        android:layout_width=\"70dp\"\r\n                        android:layout_height=\"50dp\"\r\n                        android:id=\"@+id/healthCareImage\"\r\n                        android:src=\"@drawable/preg3\"\r\n                        android:layout_centerInParent=\"true\"\r\n                        />\r\n                    <TextView\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:text=\"Hygiene\"\r\n                        android:textSize=\"16sp\"\r\n                        android:layout_below=\"@+id/healthCareImage\"\r\n                        android:layout_centerHorizontal=\"true\"\r\n                        android:fontFamily=\"@font/montserrat_bold\"\r\n                        android:textColor=\"#BE79DF\"\r\n                        android:layout_marginTop=\"10dp\"\r\n                        android:layout_marginBottom=\"10dp\"\r\n                        />\r\n                    <Button\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"match_parent\"\r\n                        android:id=\"@+id/healthCareId\"\r\n                        android:background=\"@android:color/transparent\"\r\n                        />\r\n\r\n                </RelativeLayout>\r\n\r\n            </androidx.cardview.widget.CardView>\r\n            <androidx.cardview.widget.CardView\r\n                android:layout_width=\"0dp\"\r\n                android:layout_height=\"match_parent\"\r\n                android:layout_weight=\"1\"\r\n                android:layout_marginLeft=\"5dp\"\r\n                android:orientation = \"vertical\"\r\n                android:gravity = \"center\"\r\n                >\r\n                <RelativeLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"match_parent\"\r\n                    android:background=\"@color/pink\"\r\n                    >\r\n                    <ImageView\r\n                        android:layout_width=\"70dp\"\r\n                        android:layout_height=\"50dp\"\r\n                        android:id=\"@+id/DietChartImage\"\r\n                        android:src=\"@drawable/preg4\"\r\n                        android:layout_centerInParent=\"true\"\r\n                        />\r\n                    <TextView\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:text=\"Pregnancy\"\r\n                        android:fontFamily=\"@font/montserrat_bold\"\r\n                        android:textSize=\"16sp\"\r\n                        android:layout_below=\"@+id/DietChartImage\"\r\n                        android:layout_centerHorizontal=\"true\"\r\n\r\n                        android:textColor=\"#BE79DF\"\r\n                        android:layout_marginTop=\"10dp\"\r\n                        android:layout_marginBottom=\"10dp\"\r\n                        />\r\n                    <Button\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"match_parent\"\r\n                        android:id=\"@+id/dietChartId\"\r\n                        android:background=\"@android:color/transparent\"\r\n                        />\r\n\r\n                </RelativeLayout>\r\n\r\n            </androidx.cardview.widget.CardView>\r\n\r\n        </LinearLayout>\r\n    </LinearLayout>\r\n\r\n\r\n\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_care.xml	(revision 3d262067af547a90e8fcddd898c0148decfe4b0b)
++++ app/src/main/res/layout/fragment_care.xml	(date 1619125170480)
+@@ -67,7 +67,7 @@
+                     <Button
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+-                        android:id="@+id/healthCareId"
++                        android:id="@+id/hygieneId"
+                         android:background="@android:color/transparent"
+                         />
+ 
+@@ -110,7 +110,7 @@
+                     <Button
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+-                        android:id="@+id/dietChartId"
++                        android:id="@+id/pregnancyId"
+                         android:background="@android:color/transparent"
+                         />
+ 
+Index: app/src/main/java/com/example/wcare/mentalHealthActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/wcare/mentalHealthActivity.java	(date 1619123637313)
++++ app/src/main/java/com/example/wcare/mentalHealthActivity.java	(date 1619123637313)
+@@ -0,0 +1,14 @@
++package com.example.wcare;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class mentalHealthActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_mental_health);
++    }
++}
+\ No newline at end of file

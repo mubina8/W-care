@@ -25,11 +25,13 @@ public class SignIn extends AppCompatActivity  {
     EditText userEmail,userPass;
     ProgressBar progressBar;
 
+
     FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_sign_in );
+
 
         mAuth = FirebaseAuth.getInstance();
 
