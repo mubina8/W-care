@@ -18,9 +18,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class SignIn extends AppCompatActivity  {
+public class SignIn extends AppCompatActivity implements View.OnClickListener  {
 
-    TextView signup;
+    TextView signup,wcare;
     Button login;
     EditText userEmail,userPass;
     ProgressBar progressBar;
@@ -38,7 +38,8 @@ public class SignIn extends AppCompatActivity  {
         userEmail = findViewById( R.id.userNameEditTxt );
         userPass = findViewById( R.id.userpasseditText );
         progressBar = findViewById( R.id.progressBarin );
-
+        wcare = (TextView) findViewById(R.id.wcare);
+        wcare.setOnClickListener(this);
         signup = (TextView) findViewById( R.id.regtxt );
         signup.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -103,4 +104,11 @@ public class SignIn extends AppCompatActivity  {
 
     }
 
+    @Override
+    public void onClick(View v) {
+        if(v.getId()==R.id.wcare){
+            Intent intent = new Intent(getApplicationContext(),hygiene.class);
+            startActivity(intent);
+        }
+    }
 }

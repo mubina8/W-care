@@ -14,29 +14,27 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import javax.annotation.Nullable;
 
-public class AfterActivity extends AppCompatActivity {
-    TextView foodText,medicine,lifeStyleText;
+public class hygieneDetailed extends AppCompatActivity {
+    TextView detail;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_after);
+        setContentView(R.layout.activity_hygiene_detailed);
         Bundle bundle = getIntent().getExtras();
         String title = bundle.getString("name");
         this.setTitle(title);
-        foodText = (TextView)findViewById(R.id.foodTextViewId);
-        medicine = (TextView)findViewById(R.id.medicineTextViewId);
-        lifeStyleText = (TextView)findViewById(R.id.lifestyleTextViewId);
+        detail = (TextView)findViewById(R.id.hygieneTextViewId);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-        DocumentReference documentReference = fStore.collection("healthCare").document("afterBirth");
+        final String disease = bundle.getString("disease");
+        DocumentReference documentReference = fStore.collection("healthCare").document("hygiene");
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
-                foodText.setText(documentSnapshot.getString("food"));
-                medicine.setText(documentSnapshot.getString("medicine"));
-                lifeStyleText.setText(documentSnapshot.getString("lifeStyle"));
+                detail.setText(documentSnapshot.getString(disease));
+
             }
         });
     }
