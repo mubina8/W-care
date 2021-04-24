@@ -2,7 +2,10 @@ package com.example.wcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -14,10 +17,11 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import javax.annotation.Nullable;
 
-public class hygieneDetailed extends AppCompatActivity {
+public class hygieneDetailed extends AppCompatActivity implements View.OnClickListener{
     TextView detail;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +29,8 @@ public class hygieneDetailed extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         String title = bundle.getString("name");
         this.setTitle(title);
+        back = (ImageView)findViewById(R.id.backId);
+        back.setOnClickListener(this);
         detail = (TextView)findViewById(R.id.hygieneTextViewId);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -37,5 +43,14 @@ public class hygieneDetailed extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId()==R.id.backId){
+            Intent intent = new Intent(getApplicationContext(),hygiene.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }

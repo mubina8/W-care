@@ -1,13 +1,16 @@
 package com.example.wcare;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.wcare.fragments.CareFragment;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -21,12 +24,13 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String foodText,medicine,lifeStyle,mentalhealth;
-
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pregnancy);
         this.setTitle("Pregnancy");
+        back = (ImageView)findViewById(R.id.backId);
         after = (Button)findViewById(R.id.AfterId);
         before = (Button)findViewById(R.id.beforeId);
         special = (Button)findViewById(R.id.specialTipsId);
@@ -36,6 +40,7 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
         mental.setOnClickListener(this);
         after.setOnClickListener(this);
         before.setOnClickListener(this);
+        back.setOnClickListener(this);
     }
 
     @Override
@@ -100,6 +105,15 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
             });*/
 
             startActivity(intent);
+        }
+        if(v.getId()==R.id.backId){
+            Fragment selectedFragment = new CareFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+           /* Intent intent = new Intent(getApplicationContext(), CareFragment.selectedFragment);
+            startActivity(intent);
+            finish();*/
+
+
         }
     }
 

@@ -23,6 +23,7 @@
                 android:padding="15dp"
                 android:layout_marginRight="300dp"
                 android:src="@drawable/back"
+                android:id="@+id/backId"
                 android:layout_centerVertical="true"
 
 

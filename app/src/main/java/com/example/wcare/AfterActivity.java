@@ -2,7 +2,12 @@ package com.example.wcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -14,10 +19,12 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import javax.annotation.Nullable;
 
-public class AfterActivity extends AppCompatActivity {
+public class AfterActivity extends AppCompatActivity implements View.OnClickListener{
     TextView foodText,medicine,lifeStyleText;
+     ImageView back;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +32,8 @@ public class AfterActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         String title = bundle.getString("name");
         this.setTitle(title);
+        back = (ImageView) findViewById(R.id.backId);
+        back.setOnClickListener(this);
         foodText = (TextView)findViewById(R.id.foodTextViewId);
         medicine = (TextView)findViewById(R.id.medicineTextViewId);
         lifeStyleText = (TextView)findViewById(R.id.lifestyleTextViewId);
@@ -39,5 +48,14 @@ public class AfterActivity extends AppCompatActivity {
                 lifeStyleText.setText(documentSnapshot.getString("lifeStyle"));
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId()==R.id.backId){
+            Intent intent = new Intent(getApplicationContext(),pregnancy.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }

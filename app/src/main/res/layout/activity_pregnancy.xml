@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgpic"
     tools:context=".pregnancy">
 
     <ScrollView
@@ -21,37 +20,64 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:id="@+id/backId"
+                        android:layout_marginRight="300dp"
+                        android:src="@drawable/back"
+                        android:layout_centerVertical="true"
+
+
+                        />
+
+                </RelativeLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="230dp"
+                    android:layout_height="240dp"
                     android:orientation="vertical"
+                    android:layout_marginTop="100dp"
                     android:gravity="center"
 
                     >
 
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                       android:layout_marginBottom="40dp"
+                        app:srcCompat="@drawable/wcare" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Pregnancy"
-                        android:textColor="@color/lemon"
+                        android:textColor="@color/purple"
+                        android:layout_marginBottom="40dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:paddingTop="40dp"
-                        android:layout_marginLeft="70dp"
-                        android:layout_marginTop="10dp"
                         android:textSize="40dp"
                         android:fontFamily="@font/montserrat_bold"
 
                         />
 
 
+
                 </LinearLayout>
+
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="255dp"
+                    android:layout_marginTop="330dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     >

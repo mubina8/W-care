@@ -3,25 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lemon"
+
     tools:context=".fragments.CareFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:orientation="vertical"
+        android:layout_marginTop="80dp"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/pregnancy" />
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/wcare"
+            />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="340dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         >

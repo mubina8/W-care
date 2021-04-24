@@ -1,18 +1,22 @@
 package com.example.wcare;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.wcare.fragments.CareFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class hygiene extends AppCompatActivity implements View.OnClickListener{
     Button vb,sb,cb,sab,mb;
+    ImageView back;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     @Override
@@ -24,11 +28,13 @@ public class hygiene extends AppCompatActivity implements View.OnClickListener{
         cb = (Button)findViewById(R.id.clothsId);
         sab = (Button)findViewById(R.id.safeIntercourseId);
         mb = (Button)findViewById(R.id.medicationId);
+        back = (ImageView)findViewById(R.id.backId);
         vb.setOnClickListener(this);
         sb.setOnClickListener(this);
         cb.setOnClickListener(this);
         sab.setOnClickListener(this);
         mb.setOnClickListener(this);
+        back.setOnClickListener(this);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
     }
@@ -74,6 +80,13 @@ public class hygiene extends AppCompatActivity implements View.OnClickListener{
             intent.putExtra("disease","medication");
             startActivity(intent);
 
+        }
+        if(v.getId()==R.id.backId){
+            /*Intent intent = new Intent(getApplicationContext(), CareFragment.class);
+            startActivity(intent);
+            finish();*/
+            Fragment selectedFragment = new CareFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
         }
 
     }

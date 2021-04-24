@@ -37,7 +37,8 @@ public class CareFragment extends Fragment {
 
                 Intent hygineIntent = new Intent( getContext(), hygiene.class );
                 startActivity( hygineIntent );
-                getActivity().finish();
+
+
             }
         } );
 
@@ -48,7 +49,8 @@ public class CareFragment extends Fragment {
 
                 Intent pregnencyIntent = new Intent( getContext(), pregnancy.class );
                 startActivity( pregnencyIntent );
-                getActivity().finish();
+
+
 
             }
         } );
