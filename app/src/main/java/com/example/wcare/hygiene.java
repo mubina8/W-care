@@ -82,11 +82,11 @@ public class hygiene extends AppCompatActivity implements View.OnClickListener{
 
         }
         if(v.getId()==R.id.backId){
-            /*Intent intent = new Intent(getApplicationContext(), CareFragment.class);
+            Intent intent = new Intent(getApplicationContext(),NavigationPage.class);
             startActivity(intent);
-            finish();*/
-            Fragment selectedFragment = new CareFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+            finish();
+            //Fragment selectedFragment = new CareFragment();
+            //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
         }
 
     }
