@@ -41,8 +41,7 @@ public  class post_adapter extends RecyclerView.Adapter <RecyclerView.ViewHolder
     int total_types;
     private ViewGroup viewGroup;
     private int i;
-    ConstraintLayout container;
-    RelativeLayout imgcontainer;
+    RelativeLayout imgcontainer,container;
     FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
 

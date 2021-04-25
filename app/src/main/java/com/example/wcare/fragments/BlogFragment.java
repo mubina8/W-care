@@ -78,7 +78,7 @@ public class BlogFragment extends Fragment {
         databaseReference = database.getReference("Posts");
         postRecyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        userRef = FirebaseDatabase.getInstance().getReference("Users").child(mAuth.getCurrentUser().getUid());
+        userRef = FirebaseDatabase.getInstance().getReference("Users").child(UserId);
 
 
         return v;

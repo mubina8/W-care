@@ -1,125 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/carebg"
+    android:padding="10dp"
     tools:context=".fragments.CareFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:orientation="vertical"
-        android:layout_marginTop="80dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="40dp"
-            android:src="@drawable/wcare"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="340dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="298dp"
         android:layout_marginRight="10dp"
-        >
+        android:elevation="5dp"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:orientation="horizontal"
             android:layout_marginBottom="10dp"
-            >
+            android:orientation="horizontal">
+
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation = "vertical"
-
                 android:layout_marginRight="5dp"
-                android:gravity = "center"
-                >
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/pink"
-                    >
+                    android:background="@color/pink">
+
                     <ImageView
+                        android:id="@+id/healthCareImage"
                         android:layout_width="70dp"
                         android:layout_height="50dp"
-                        android:id="@+id/healthCareImage"
-                        android:src="@drawable/preg3"
                         android:layout_centerInParent="true"
-                        />
+                        android:elevation="2dp"
+                        android:src="@drawable/preg3" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hygiene"
-                        android:textSize="16sp"
                         android:layout_below="@+id/healthCareImage"
                         android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textColor="#BE79DF"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        />
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Hygiene"
+                        android:textColor="#BE79DF"
+                        android:textSize="16sp" />
+
                     <Button
+                        android:id="@+id/hygieneId"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/hygieneId"
                         android:background="@android:color/transparent"
-                        />
+                        android:elevation="2dp" />
 
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:orientation = "vertical"
-                android:gravity = "center"
-                >
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/pink"
-                    >
+                    android:background="@color/pink">
+
                     <ImageView
+                        android:id="@+id/DietChartImage"
                         android:layout_width="70dp"
                         android:layout_height="50dp"
-                        android:id="@+id/DietChartImage"
-                        android:src="@drawable/preg4"
                         android:layout_centerInParent="true"
-                        />
+                        android:elevation="2dp"
+                        android:src="@drawable/preg4" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pregnancy"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textSize="16sp"
                         android:layout_below="@+id/DietChartImage"
                         android:layout_centerHorizontal="true"
-
-                        android:textColor="#BE79DF"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        />
+                        android:fontFamily="@font/montserrat_bold"
+
+                        android:text="Pregnancy"
+                        android:textColor="#BE79DF"
+                        android:textSize="16sp" />
+
                     <Button
+                        android:id="@+id/pregnancyId"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/pregnancyId"
                         android:background="@android:color/transparent"
-                        />
+                        android:elevation="2dp" />
 
                 </RelativeLayout>
 
@@ -129,6 +121,21 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="cursive"
+        android:text="“At the end of the day, your health is your responsibility.” – Jillian Michaels"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

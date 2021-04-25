@@ -95,9 +95,12 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener  {
                     Intent intent = new Intent( SignIn.this,NavigationPage.class );
                     startActivity( intent );
                     finish();
+
                 }
                 else {
-                    Toast.makeText(SignIn.this,"Sign in Failed!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignIn.this,"Check your email id or password!",Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility( View.INVISIBLE);
+                    login.setVisibility( View.VISIBLE );
                 }
             }
         } );

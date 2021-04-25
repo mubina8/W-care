@@ -33,7 +33,7 @@
         android:layout_marginTop="253dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/uititlecard"
+        android:background="@drawable/cardbackground"
         android:padding="8dp">
 
 
@@ -67,6 +67,7 @@
             android:layout_marginTop="17dp"
             android:layout_toEndOf="@+id/userdp"
             android:padding="8dp"
+            android:fontFamily="@font/montserrat"
             android:text="Simple Title Text"
             android:textColor="@color/purple"
             android:textStyle="bold" />
@@ -77,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgTitle"
             android:layout_marginTop="12dp"
-            android:fontFamily="sans-serif-condensed"
+            android:fontFamily="@font/montserrat"
             android:lineSpacingExtra="6dp"
             android:padding="10dp"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "

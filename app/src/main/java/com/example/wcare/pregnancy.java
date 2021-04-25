@@ -108,8 +108,8 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
             startActivity(intent);
         }
         if(v.getId()==R.id.backId){
-            Fragment selectedFragment = new CareFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+           // Fragment selectedFragment = new CareFragment();
+           // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
            /* Intent intent = new Intent(getApplicationContext(), CareFragment.selectedFragment);
             startActivity(intent);
             finish();*/

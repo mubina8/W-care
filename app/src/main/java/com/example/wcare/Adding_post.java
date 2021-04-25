@@ -121,7 +121,6 @@ public class Adding_post extends AppCompatActivity {
         Intent galleryIntent = new Intent(Intent.ACTION_GET_CONTENT);
         galleryIntent.setType("image/*");
         startActivityForResult(galleryIntent,REQUESCODE);
-        Toast.makeText(Adding_post.this,"Please accept for required permission",Toast.LENGTH_SHORT).show();
 
     }
 
@@ -273,6 +272,7 @@ public class Adding_post extends AppCompatActivity {
                     detailpost.setDescription( popupDescription.getText().toString() );
                     detailpost.setType( 0);
                     detailpost.setUserid(UserId);
+
 
                     postAddedtoFirebase(detailpost);
 
