@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pregnancybg"
     tools:context=".pregnancy">
 
     <ScrollView
@@ -21,22 +20,20 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
-
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="102dp">
-
+                    android:layout_height="?actionBarSize">
                     <ImageView
-                        android:id="@+id/backId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginTop="21dp"
-                        android:layout_marginRight="300dp"
-
-
                         android:padding="15dp"
-                        android:src="@drawable/back" />
+                        android:id="@+id/backId"
+                        android:layout_marginRight="300dp"
+                        android:src="@drawable/back"
+                        android:layout_centerVertical="true"
+
+
+                        />
 
                 </RelativeLayout>
                 <LinearLayout
@@ -48,28 +45,27 @@
 
                     >
 
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                       android:layout_marginBottom="40dp"
+                        app:srcCompat="@drawable/wcare" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="40dp"
-                        android:fontFamily="@font/montserrat_bold"
                         android:text="Pregnancy"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/purple"
+                        android:layout_marginBottom="40dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textSize="40dp"
+                        android:fontFamily="@font/montserrat_bold"
 
                         />
 
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="372dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="cursive"
-                        android:text="“Women’s health needs to be front and center – it often isn’t, but it needs to be.” – Cynthia Nixon"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
 
 
                 </LinearLayout>

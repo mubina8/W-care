@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_bold"
                 android:textSize="20sp"
-                android:text="MEDICINE"
+                android:text="MEDICATION"
                 android:textColor="@color/white"
 
                 />
