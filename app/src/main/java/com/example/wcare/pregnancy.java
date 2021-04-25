@@ -41,6 +41,7 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
         after.setOnClickListener(this);
         before.setOnClickListener(this);
         back.setOnClickListener(this);
+        special.setOnClickListener(this);
     }
 
     @Override
@@ -48,7 +49,7 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
         if(v.getId()==R.id.AfterId){
             Intent intent = new Intent(getApplicationContext(), AfterActivity.class);
             intent.putExtra("name","Pregnancy");
-            foodText = "One or two cloves garlic everyday in the morning with water. Bananas contain plenty of potassium.potassium reduces the effects of sodium and alleviates tension in the walls of the blood vessels. One glass of coconut water should be taken. One cup celery juice with apple juice. two or three table spoons of apple cider vinegar for a month.";
+           /* foodText = "One or two cloves garlic everyday in the morning with water. Bananas contain plenty of potassium.potassium reduces the effects of sodium and alleviates tension in the walls of the blood vessels. One glass of coconut water should be taken. One cup celery juice with apple juice. two or three table spoons of apple cider vinegar for a month.";
             medicine = "If you're planning to have a baby, it's important that you take folic acid tablets for two to three months before you conceive. This allows it to build up in your body to a level that gives the most protection to your future baby against neural tube defects, such as spina bifida";
             lifeStyle = "Lose extra pounds and watch your waistline. Exercise regularly. Eat a healthy diet. Reduce sodium in your diet.Limit the amount of alcohol you drink. Quit smoking. Cut back on caffeine. Reduce your stress.";
             DocumentReference documentReference = fStore.collection("healthCare").document("afterBirth");
@@ -61,13 +62,13 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
                 public void onSuccess(Void aVoid) {
                     Toast.makeText(getApplicationContext(),"After Birth Pregnancy Details",Toast.LENGTH_SHORT).show();
                 }
-            });
+            });*/
             startActivity(intent);
         }
         if(v.getId()==R.id.beforeId){
             Intent intent = new Intent(getApplicationContext(), beforeActivity.class);
             intent.putExtra("name","Pregnancy");
-            foodText = "One or two cloves garlic everyday in the morning with water. Bananas contain plenty of potassium.potassium reduces the effects of sodium and alleviates tension in the walls of the blood vessels. One glass of coconut water should be taken. One cup celery juice with apple juice. two or three table spoons of apple cider vinegar for a month.";
+           /* foodText = "One or two cloves garlic everyday in the morning with water. Bananas contain plenty of potassium.potassium reduces the effects of sodium and alleviates tension in the walls of the blood vessels. One glass of coconut water should be taken. One cup celery juice with apple juice. two or three table spoons of apple cider vinegar for a month.";
             medicine = "If you're planning to have a baby, it's important that you take folic acid tablets for two to three months before you conceive. This allows it to build up in your body to a level that gives the most protection to your future baby against neural tube defects, such as spina bifida";
             lifeStyle = "Lose extra pounds and watch your waistline. Exercise regularly. Eat a healthy diet. Reduce sodium in your diet.Limit the amount of alcohol you drink. Quit smoking. Cut back on caffeine. Reduce your stress.";
             DocumentReference documentReference = fStore.collection("healthCare").document("beforeBirth");
@@ -80,11 +81,11 @@ public class pregnancy extends AppCompatActivity implements View.OnClickListener
                 public void onSuccess(Void aVoid) {
                     Toast.makeText(getApplicationContext(),"Before Birth Pregnancy Details",Toast.LENGTH_SHORT).show();
                 }
-            });
+            });*/
             startActivity(intent);
         }
         if(v.getId()==R.id.specialTipsId){
-            Intent intent = new Intent(getApplicationContext(), AfterActivity.class);
+            Intent intent = new Intent(getApplicationContext(), specialActivity.class);
             startActivity(intent);
         }
         if(v.getId()==R.id.mentalHeailthId){

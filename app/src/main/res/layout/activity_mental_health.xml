@@ -39,15 +39,7 @@
         android:layout_margin="20dp"
         android:gravity="center"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_bold"
-            android:textSize="20sp"
-            android:text="FOOD"
-            android:textColor="@color/lemon"
 
-            />
     </RelativeLayout>
     <TextView
         android:id="@+id/mentalTextViewId"

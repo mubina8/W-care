@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">Wcare</string>
 
-        <string name="menu_refresh">Refresh</string>
+    <string name="menu_refresh">Refresh</string>
 
-        <string-array name="feelings">
-            <item>How are you feeling?</item>
-            <item>Feeling Happy</item>
-            <item>Feeling Sad</item>
-            <item>Feeling Angry</item>
-            <item>Feeling Depressed</item>
-            <item>Feeling Broken</item>
+    <string-array name="feelings">
+        <item>How are you feeling?</item>
+        <item>Feeling Happy</item>
+        <item>Feeling Sad</item>
+        <item>Feeling Angry</item>
+        <item>Feeling Depressed</item>
+        <item>Feeling Broken</item>
 
-        </string-array>
+    </string-array>
 
 </resources>

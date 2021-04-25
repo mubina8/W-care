@@ -29,8 +29,6 @@
 
                 />
 
-
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -50,16 +48,45 @@
 
                 />
         </RelativeLayout>
-        <TextView
-            android:id="@+id/foodTextViewId"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
-            android:textSize="20sp"
-            android:justificationMode="inter_word"
-            />
+            android:layout_margin="20dp"
+            android:background="@drawable/customborder"
+            android:layout_height="?actionBarSize">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/up"
+                android:id="@+id/upId"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/down"
+                android:id="@+id/downId"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/foodTextViewId"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:justificationMode="inter_word"/>
+        </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -77,16 +104,44 @@
 
                 />
         </RelativeLayout>
-        <TextView
-            android:id="@+id/medicineTextViewId"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
-            android:textSize="20sp"
-            android:justificationMode="inter_word"
-            />
+            android:layout_margin="20dp"
+            android:background="@drawable/customborder"
+            android:layout_height="?actionBarSize">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/up"
+                android:id="@+id/medupId"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/down"
+                android:id="@+id/meddownId"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/medicineTextViewId"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:justificationMode="inter_word"/>
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -105,16 +160,44 @@
 
                 />
         </RelativeLayout>
-        <TextView
-            android:id="@+id/lifestyleTextViewId"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
-            android:textSize="20sp"
-            android:justificationMode="inter_word"
-            />
+            android:layout_margin="20dp"
+            android:background="@drawable/customborder"
+            android:layout_height="?actionBarSize">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/up"
+                android:id="@+id/lifeupId"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/down"
+                android:id="@+id/lifedownId"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lifestyleTextViewId"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:justificationMode="inter_word"/>
+        </RelativeLayout>
 
 
     </LinearLayout>
